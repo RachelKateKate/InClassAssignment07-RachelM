@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     private FirebaseDatabase database = FirebaseDatabase.getInstance();
     private DatabaseReference planetRef = database.getReference("planet");
+    private DatabaseReference peopleRef = database.getReference("Solar System");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,7 +19,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void set(View view) {
+    public void setTitle(View view) {
         planetRef.setValue(new Planet("Mars", 431, true));
     }
+
+    public void addPlanet(View view) {
+        peopleRef.push().setValue(new Planet("Mars", 431, true));
+    }
+
 }

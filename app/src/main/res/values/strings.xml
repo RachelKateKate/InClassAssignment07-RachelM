@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">InClassAssignment07-RachelM</string>
+    <string name="enter_text">Enter Text</string>
+    <string name="planet">Planet</string>
+    <string name="distance">Distance</string>
+    <string name="has_water">has Water?</string>
+    <string name="add_another_planet">Add Another Planet</string>
+    <string name="set_title">Set Title</string>
 </resources>
